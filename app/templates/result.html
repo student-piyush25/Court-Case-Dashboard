@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h2>Case Submitted</h2>
+    <p><strong>Case Type:</strong> {{ case_type }}</p>
+    <p><strong>Case Number:</strong> {{ case_number }}</p>
+    <p><strong>Filing Year:</strong> {{ filing_year }}</p>
+
+    <hr>
+    <h3>📄 Fetched Court Data (Simulated)</h3>
+    <p><strong>Petitioner:</strong> {{ petitioner }}</p>
+    <p><strong>Respondent:</strong> {{ respondent }}</p>
+    <p><strong>Next Hearing:</strong> {{ next_hearing }}</p>
+    <p><strong>Latest Order:</strong> <a href="{{ order_pdf }}" target="_blank">Download PDF</a></p>
+    <p style="color: gray; font-size: 0.9em;">Note: This data is simulated due to CAPTCHA restrictions on public court sites.</p>
+
+    <br><a href="/">← Back to Form</a>
+</body>
+</html>
+

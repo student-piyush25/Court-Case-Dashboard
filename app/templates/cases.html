@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Submitted Cases</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h2>Saved Court Cases</h2>
+
+    {% if cases %}
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>ID</th>
+                <th>Case Type</th>
+                <th>Case Number</th>
+                <th>Filing Year</th>
+            </tr>
+            {% for case in cases %}
+            <tr>
+                <td>{{ case.id }}</td>
+                <td>{{ case.case_type }}</td>
+                <td>{{ case.case_number }}</td>
+                <td>{{ case.filing_year }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No cases submitted yet.</p>
+    {% endif %}
+
+    <br>
+    <a href="/">← Back to Form</a>
+</body>
+</html>
