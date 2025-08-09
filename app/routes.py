@@ -11,7 +11,6 @@ def fetch_case_data(case_type, case_number, filing_year):
         "order_pdf": "https://example.com/fake-order.pdf"
     }
 
-
 main = Blueprint('main', __name__)
 
 @main.route('/', methods=['GET', 'POST'])
@@ -46,4 +45,12 @@ def index():
         )
 
     return render_template('index.html')
+
+
+@main.route('/cases')
+def all_cases():
+    # Fetch all saved cases from DB
+    cases = CaseInfo.query.all()
+    return render_template('cases.html', cases=cases)
+
 

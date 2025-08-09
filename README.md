@@ -53,4 +53,9 @@ pip install -r requirements.txt
 # Start the Flask server
 python run.py
 
+## 📸 Screenshots
+
+| Form Page | Result Page | All Cases Page |
+|-----------|-------------|----------------|
+| ![Form]("C:\Users\91776\OneDrive\Pictures\Documents\Desktop\court_dashboard\screenshots\Form Page.png") | ![Result]("C:\Users\91776\OneDrive\Pictures\Documents\Desktop\court_dashboard\screenshots\Result Page.png") | ![Cases]("C:\Users\91776\OneDrive\Pictures\Documents\Desktop\court_dashboard\screenshots\screenshot3_cases_page.png") |
 
