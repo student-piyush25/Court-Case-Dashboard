@@ -40,7 +40,7 @@ This app uses a **simulated function** to mimic real scraper behavior, allowing 
 
 ```bash
 # Clone this repository
-git clone https://github.com/your-username/court-case-dashboard.git
+git clone https://github.com/student-piyush25/court-case-dashboard.git
 cd court-case-dashboard
 
 # Create and activate virtual environment
